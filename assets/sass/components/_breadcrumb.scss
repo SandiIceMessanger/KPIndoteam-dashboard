@@ -1,0 +1,25 @@
+.breadcrumb {
+  padding: 5px 0px;
+  margin-bottom: 0px;
+  background: transparent;
+  li {
+    a {
+      font-size: 14px;
+      font-weight: 600;
+      color: $color-primary;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+.breadcrumb-detail {
+  @media screen and (max-width: 480px) {
+    .breadcrumb {
+      li.active {
+        display: none;
+      }
+    }
+  }
+}

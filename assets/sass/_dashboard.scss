@@ -1,0 +1,220 @@
+@import "components/variables";
+.dashboard-left {
+  top: 240px;
+  z-index: 9;
+  .avatar-user {
+    .media {
+      img {
+        width: 80px;
+        border-radius: 50%;
+      }
+      .media-body {
+        .status-user {
+          i {
+            color: #03ca03;
+            font-size: 7px;
+          }
+          span {
+            font-size: 13px;
+            font-weight: 600;
+            color: $color-text;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
+  .menu-user {
+    margin: 30px 0px 20px 0px;
+    ul {
+      padding-left: 0px;
+      margin-bottom: 0px;
+      li {
+        list-style: none;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        a {
+          display: block;
+          font-size: 14px;
+          font-weight: 600;
+          padding: 10px 15px;
+          color: $color-text;
+          text-transform: uppercase;
+          &:hover {
+            color: $color-text;
+            text-decoration: none;
+            background: $bg-grey;
+          }
+          &.active {
+            background: $bg-grey;
+          }
+          i {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+.dashboard-right {
+  .akun-user {
+    table {
+      width: 100%;
+      tr {
+        td {
+          padding: 5px 0px;
+          &.label {
+            font-weight: 600;
+            color: $color-text;
+          }
+        }
+      }
+    }
+  }
+  .activity-user {
+    margin-bottom: 20px;
+    .card-body {
+      i {
+        color: #ededed;
+        font-size: 65px;
+        margin-bottom: 15px;
+      }
+      p {
+        color: #b2b1b1;
+      }
+      .list-activity {
+        border-bottom: 1px solid #dddddd;
+        &:last-child {
+          border-bottom: 0px;
+        }
+        .media {
+          .media-aside {
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+          }
+          .media-body {
+            .desc-activity-user {
+              width: 90%;
+              p {
+                font-size: 15px;
+                color: $color-text;
+              }
+              span {
+                font-weight: bold;
+                a {
+                  color: $color-text;
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
+              }
+              em {
+                font-style: inherit;
+              }
+              .action-activity {
+                p {
+                  color: #aeacac;
+                  font-size: 13px;
+                  i {
+                    float: left;
+                    font-size: 16px;
+                    margin-right: 5px;
+                    margin-bottom: 0px;
+                    position: relative;
+                    top: 3px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .more-activity {
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .more-activity-list {
+      height: 480px;
+      overflow-y: scroll;
+    }
+  }
+  .recomendation-user {
+    .card-body {
+      .col-lg-3 {
+        padding: 10px;
+      }
+    }
+    .box-recomendation {
+      a {
+        .short-desc {
+          p {
+            font-size: 15px;
+            line-height: 19px;
+            color: $color-text;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            max-height: 40px;
+            overflow: hidden;
+            display: -webkit-box!important;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        .img-recomendation {
+          margin-bottom: 5px;
+          img {
+            width: 100%;
+            height: 140px;
+            max-height: 100%;
+          }
+        }
+      }
+      .box-no-image {
+        .bg-no-image {
+          height: 130px;
+          margin-bottom: 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .recomendation-user {
+      .box-recomendation {
+        a {
+          .img-recomendation {
+            img {
+              height: 115px;
+            }
+          }
+          .short-desc {
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .containerCustome {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .akunPage {
+    margin-bottom: 15em;
+  }
+}

@@ -1,0 +1,100 @@
+footer {
+  background: #f56565;
+  ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    li {
+      list-style: none;
+      a {
+        color: $color-white;
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+  .logo_footer {
+    img {
+      width: 125px;
+      height: auto;
+    }
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
+  }
+  .list_sosmed {
+    ul {
+      margin: auto;
+      width: 90px;
+      li {
+        float: left;
+        margin: 0px 7px;
+        a {
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+  p.copyright {
+    padding: 0px 35px;
+    padding-left: 0px;
+    @media screen and (max-width: 480px) {
+      font-size: 15px;
+      line-height: 20px;
+      padding-left: 35px;
+      text-align: center;
+    }
+    a {
+      color: $color-white;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .powered{
+    p {
+      font-size: 15px;
+    }
+  }
+  .menu_footer {
+    width: 50%;
+    float: left;
+  }
+  .download_apps {
+    @media screen and (max-width: 600px) {
+      text-align: center;
+    }
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: $color-white;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    .bg-icon {
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      text-align: center;
+      line-height: 34px;
+      color: $color-white;
+      display: inline-table;
+    }
+    .icon-facebook {
+      background: $fb-color;
+    }
+    .icon-instagram {
+      background: radial-gradient(ellipse at left bottom, #ffdc80 15%, #e1306c 55%, #5851db 100%);
+    }
+    .icon-twitter {
+      background: $twitt-color;
+    }
+  }
+}

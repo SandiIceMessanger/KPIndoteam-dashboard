@@ -1,0 +1,40 @@
+language: node_js
+services:
+  - docker
+node_js:
+  - 10
+
+branches:
+  only:
+    - master
+    - staging
+    - testing
+    - development
+
+before_install:
+  - pip install awscli --user awscli
+  - export PATH=$PATH:$HOME/.local/bin
+
+install:
+  - ECRLOGIN=$(aws ecr get-login --region ap-southeast-1 --no-include-email)
+  - ${ECRLOGIN}
+  #- npm install
+  #- npm run generate
+  #- mkdir dist && touch README
+  - bash shells/deploy.sh
+
+script:
+  - echo "nothing done in script"
+
+#deploy:
+#  - provider: s3
+#    access_key_id: "${AWS_ACCESS_KEY_ID}"
+#    secret_access_key: "${AWS_SECRET_ACCESS_KEY}"
+#    bucket: "indochat-wordpress-frontend"
+#    skip_cleanup: true
+#    upload-dir: "${S3_FOLDER}"
+#    local_dir: "dist"
+#    region: "${AWS_DEFAULT_REGION}"
+#    acl: public_read
+#    on:
+#      all_branches: true

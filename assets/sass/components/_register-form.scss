@@ -1,0 +1,89 @@
+#form-register {
+  .modal-dialog {
+    // height: 93%;
+    margin-bottom: 0px;
+    @media screen and (min-width: 576px) {
+      max-width: 470px;
+    }
+    .modal-content {
+      height: 100%;
+      max-height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px 0 rgba(0,0,0,.3);
+      .modal-body {
+        padding: 45px 55px;
+        p.short-desc {
+          color: #3f3e3f;
+          font-size: 16px;
+          line-height: 22px;
+          text-align: center;
+          margin-bottom: 22px;
+          letter-spacing: .17px;
+        }
+        form {
+          fieldset {
+            position: relative;
+            input {
+              border-top: 0px;
+              border-left: 0px;
+              border-right: 0px;
+              padding-left: 5px;
+              border-radius: 0px;
+              border-bottom: 1px solid #d9d8d8;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .b-form-datepicker {
+              border-top: 0px;
+              border-left: 0px;
+              border-right: 0px;
+              border-radius: 0px;
+              button.h-auto {
+                display: none;
+              }
+            }
+            .iconCalendar {
+              position: absolute;
+              top: 0;
+              right: 5px;
+              svg {
+                color: #5b5b5b;
+              }
+            }
+          }
+          p {
+            font-size: 14px;
+            color: $color-grey;
+            a {
+              color: $bg-button;
+            }
+          }
+          .primary-button {
+            &:hover {
+              color: $color-white;
+            }
+          }
+          .form-password {
+            svg {
+              position: absolute;
+              top: 12px;
+              right: 5px;
+              color: #5b5b5b;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          padding: 25px;
+        }
+      }
+    }
+  }
+}

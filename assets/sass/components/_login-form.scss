@@ -1,0 +1,69 @@
+#form-login {
+  text-align: center;
+  .modal-dialog {
+    // height: 93%;
+    margin-bottom: 0px;
+    @media screen and (min-width: 576px) {
+      max-width: 470px;
+    }
+    .modal-content {
+      height: 100%;
+      max-height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px 0 rgba(0,0,0,.3);
+      header {
+        padding: 45px 55px;
+      }
+      .modal-body {
+        padding: 45px 55px;
+        img.brand-text {
+          width: 60%;
+          border-radius: 0px;
+          margin-bottom: 25px;
+        }
+        form {
+          fieldset {
+            position: relative;
+            input {
+              font-size: 23px;
+              border-top: 0px;
+              border-left: 0px;
+              border-right: 0px;
+              padding-left: 5px;
+              border-radius: 0px;
+              text-align: center;
+              border-bottom: 1px solid #d9d8d8;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .onError {
+              color: red !important;
+            }
+          }
+          p {
+            font-size: 14px;
+            color: $color-grey;
+            a {
+              color: $bg-button;
+            }
+          }
+          .primary-button {
+            &:hover {
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          padding: 25px;
+        }
+      }
+    }
+  }
+}

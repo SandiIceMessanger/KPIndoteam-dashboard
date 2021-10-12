@@ -1,0 +1,21 @@
+button.primary-button {
+  height: 40px;
+  font-weight: 600;
+  background: $bg-button;
+  border: 1px solid #fe8282;
+  &:hover {
+    background: #e97474;
+    border: 1px solid #e97474;
+  }
+}
+.primary-button {
+  height: 40px;
+  font-weight: 600;
+  color: $color-white;
+  background: $bg-button;
+  border: 1px solid #fe8282;
+  &:hover {
+    background: #e97474;
+    border: 1px solid #e97474;
+  }
+}

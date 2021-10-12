@@ -1,0 +1,94 @@
+.about-us {
+	padding: 4rem 0px;
+	h2 {
+		color: #535353;
+		font-size: 39px;
+	    font-weight: 700;
+	    margin-bottom: 20px;
+	}
+	p {
+		font-size: 17px;
+	}
+	@media screen and (max-width: 480px) {
+		padding: 1rem 0px;
+		h2 {
+			font-size: 24px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+}
+.media-siber {
+	padding: 4rem 0px;
+	h2 {
+		color: #535353;
+		font-size: 39px;
+	    font-weight: 700;
+	    margin-bottom: 20px;
+	}
+	ol {
+		li {
+			font-size: 17px;
+			margin-bottom: 15px;
+		}
+	}
+	p {
+		font-size: 17px;
+		&.att {
+			color: #7b7b7b;
+			font-size: 13px;
+			margin-top: -14px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		padding: 1rem 0px;
+		h2 {
+			font-size: 24px;
+		}
+		ol {
+			padding-left: 15px;
+			li {
+				font-size: 14px;
+			}
+		}
+		p {
+			font-size: 14px;
+			&.att {
+				line-height: 17px;
+    			margin-top: -15px;
+			}
+		}
+	}
+}
+.kebijakan-privasi {
+	padding: 4rem 0px;
+	ul {
+		li {
+			list-style: decimal;
+			label {
+				font-weight: bold;
+			}
+		}
+	}
+}
+.kode-etik {
+	padding: 4rem 0px;
+	ul {
+		li {
+			list-style: decimal;
+			label {
+				font-weight: bold;
+			}
+			ol {
+				margin-top: 10px;
+				li {
+					list-style: lower-alpha;
+					p {
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+}

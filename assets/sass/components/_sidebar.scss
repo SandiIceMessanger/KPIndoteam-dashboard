@@ -1,0 +1,331 @@
+.boxWidget {
+	padding-top: 1px;
+}
+.sidebar-top {
+	.img-sidebar-top {
+		margin-bottom: 25px;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.trending-box {
+		.trending-list {
+			position: relative;
+			span.baging {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 5px;
+			    height: 27px;
+			    background: $color-primary;
+			}
+			h3 {
+				font-size: 20px;
+			    font-weight: 700;
+			    margin-left: 15px;
+			    text-transform: uppercase;
+			}
+			ul {
+				list-style: none;
+				padding-left: 15px;
+				li {
+					margin-bottom: 5px;
+					a {
+						color: #1d3557;
+						font-weight: 600;
+						font-size: 15px;
+						text-transform: uppercase;
+						&:hover {
+							text-decoration: none;
+						}
+						span {
+							font-size: 21px;
+							margin-right: 10px;
+							color: $color-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.boxListOlimpic {
+	.headingOlimpic {
+		position: relative;
+		margin-bottom: 15px;
+		h3 {
+			font-size: 18px;
+		    font-weight: 700;
+		    margin-bottom: 0px;
+		    padding-top: 2px;
+		    text-transform: uppercase;
+		    @media screen and (max-width: 485px) {
+		    	font-size: 17px;
+		    }
+		}
+	}
+	.listOlimpic {
+		padding: 15px;
+		border-radius: 8px;
+    	margin-bottom: 25px;
+		border: 1px solid #dddddd;
+		table {
+			width: 100%;
+			tr {
+				border-top: 0px;
+				// border-top: 1px solid #ffffff;
+    			border-bottom: 1px solid #f5f5f5;
+				&:hover {
+					background: #f8f9fa;
+					border-top: 1px solid #f5f5f5;
+    				border-bottom: 1px solid #f5f5f5;
+				}
+				td {
+					border-top: 0px;
+					font-size: 15px;
+					padding: 8px 5px;
+					text-align: center;
+					&.country {
+						text-align: left;
+					}
+					@media screen and (max-width: 485px) {
+		    			font-size: 12px;
+		    		}
+		    		span {
+		    			position: relative;
+		    			top: 2px;
+		    		}
+		    		@media screen and (max-width: 485px) {
+		    			&.country {
+			    			img {
+			    				display: none;
+			    			}
+			    		}
+		    		}
+		    		img {
+		    			height: 24px;
+		    			width: 24px;
+		    		}
+				}
+				th {
+					padding-bottom: 10px;
+					.rangking {
+						text-align: center;
+						.boxRangking {
+							width: 22px;
+						    height: 22px;
+						    margin: auto;
+						    line-height: 22px;
+							border-radius: 50%;
+							p {
+								color: #ffffff;
+								font-size: 14px;
+								font-weight: 500;
+								margin-bottom: 0px;
+								i {
+									color: #2e2e2e;
+								}
+							}
+							@media screen and (max-width: 485px) {
+								width: 20px;
+								height: 20px;
+								p {
+									font-size: 12px;
+									&.rankBy {
+										line-height: 14px;
+									}
+								}
+							}
+						}
+						.rangking1 {
+							background: #e8d602;
+						}
+						.rangking2 {
+							background: #c7c7c6;
+						}
+						.rangking3 {
+							background: #ac4d4d;
+						}
+					}
+					@media screen and (max-width: 485px) {
+						font-size: 12px;
+					}
+				}
+				&.noHover {
+					&:hover {
+						background: #ffffff;
+						border-top: 0px;
+	    				border-bottom: 1px solid #f5f5f5;
+					}
+				}
+			}
+		}
+		.moreTournament {
+			.btnSelengkapnya {
+				margin-top: 15px;
+				text-align: center;
+				a {
+					p {
+						font-size: 15px;
+						margin-bottom: 0px;
+						i {
+							font-size: 11px;
+						}
+						@media screen and (max-width: 485px) {
+		    				font-size: 14px;
+		    			}
+					}
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+.populer-box {
+	top: 240px;
+	z-index: 9;
+	.populer-list {
+		ul {
+			list-style: none;
+			padding-left: 15px;
+			li {
+				padding:0px;
+				overflow: hidden;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #dddddd;
+				a {
+					color: #1d3557;
+					.num {
+						float: left;
+					    width: 28px;
+					    height: 28px;
+					    margin-bottom: 5px;
+					    margin-right: 10px;
+					    border-radius: 50%;
+					    text-align: center;
+					    background: #484848;
+					    span {
+					    	top: 1px;
+					    	position: relative;
+					    	color: $color-white;
+					    }
+					    @media screen and (max-width: 1025px) {
+					    	margin-right: 7px;
+					    }
+					}
+					&:hover {
+						color: $color-primary;
+						text-decoration: none;
+						.num {
+							background: $color-primary;
+						}
+					}
+					p {
+						width: 87%;
+						float: left;
+						margin-top: -3px;
+						font-weight: 600;
+						line-height: 23px;
+						margin-bottom: 0px;
+					}
+				}
+				&:last-child {
+					border-bottom: 0px;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.populer-list {
+			ul {
+				padding-left: 0px;
+				li {
+					a {
+						p {
+							line-height: 22px;
+						}
+						.num {
+							width: 25px;
+    						height: 25px;
+    						margin-top: 3px;
+							span {
+								top: 0px;
+							    font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.widget-partner-mobile {
+	display: none;
+}
+.widget-partner-mobile {
+	@media screen and (max-width: 769px) {
+		display: block;
+		margin-bottom: 11px;
+		.scroll-artikel {
+			.card {
+				.card-header {
+					display: block;
+					margin-bottom: 11px;
+				}
+			}
+		}
+	}
+}
+.widget-partner {
+	border-bottom: 3px solid #e6e6e6;
+    margin-bottom: 30px;
+	.scroll-artikel {
+		.card {
+			border: 0px;
+			.card-header {
+				h6 {
+					img {
+						width: 125px;
+					}
+					a.more {
+						top: 27px;
+						right: 10px;
+						font-size: 14px;
+						position: absolute;
+					    color: $color-second;
+					}
+				}
+			}
+			.card-body {
+				height: auto;
+				.media {
+					margin-bottom: 10px;
+    				padding-bottom: 10px;
+    				.media-body {
+    					.desc-artikel {
+    						a {
+    							h3 {
+    								margin-bottom: 0px !important;
+    							}
+    						}
+    					}
+    				}
+    				&:last-child {
+    					margin-bottom: 2px;
+    					padding-bottom: 2px;
+    				}
+				}
+			}
+		}
+	}
+}
+#eventPage {
+	padding-top: 55px;
+	@media screen and (max-width: 495px) {
+		padding-top: 45px;
+	}
+}
