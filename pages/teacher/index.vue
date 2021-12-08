@@ -57,18 +57,17 @@
                     <a :href="data.url" target="_blank">
                       <h5 class="mt-0">
                         {{data.ID}}
-                      </h5></a
-                    >
-                    <p>
-                      {{data.TeacherName}}
-                    </p>
+                      </h5></a>
+                    
                     <div class="box-user">
                       <div class="box-avatar-creator">
                         <a href="/#" class=""
                           ><img
                             src="https://secure.gravatar.com/avatar/038fa12f0c96c112ad3cb3ff4d2c43ff?s=96&amp;d=mm&amp;r=g"
                             alt="Avatar"
-                          /><span>Antara Digital Media</span></a
+                          /><span><p>
+                      {{data.TeacherName}}
+                    </p> Antara Digital Media</span></a
                         >
                       </div>
                       <div class="box-post-date">
