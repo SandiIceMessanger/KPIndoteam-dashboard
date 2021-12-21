@@ -39,7 +39,7 @@
                             <tr v-for="data in fetchedKanalCategoryImq.data" v-bind:key="data.id">
                                 <td>{{data.ID}}</td>
                                 <td>{{data.nama}}</td>
-                                <td>{{data.TempatTanggalLahirTempat}}</td>
+                                <td>{{data.tempat_tanggal_lahir_tempat}}</td>
                             </tr>
                         </tbody>
                     </table>
