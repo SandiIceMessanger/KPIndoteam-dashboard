@@ -1,92 +1,53 @@
 <template>
-  <section id="categoryPage">
-   
-    
-    <div class="card-body">
-        <table id="datatablesSimple" border="1">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>semester</th>
-                    <th>tahun ajaran</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="data in fetchedKanalCategoryImq.data" v-bind:key="data.id">
-                    <td>{{data.ID}}</td>
-                    <td>{{data.semester}}</td>
-                    <td>{{data.tahun_ajaran}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="row">
-      <div class="col-12 col-sm-8 col-md-8 col-lg-8">
-        <div class="new-article no-border">
-          <div class="heading-article">
-            <div class="heading-left float-left">
-              <span class="baging"></span>
-              <h3>
-                Terbaru di
-                <em style="font-style: inherit">Antara Digital Media</em>
-              </h3>
-            </div>
-          </div>
-          <!---->
-          <div>
-            <div class="list-article">
-              <ul class="list-unstyled">
-                
-                <li class="media py-3" v-for="data in fetchedKanalCategoryImq.data" v-bind:key="data.id">
-                  <div class="media-body">
-                    <a :href="data.url" target="_blank">
-                      <h5 class="mt-0">
-                        {{data.ID}}
-                      </h5></a>
-                    
-                    <div class="box-user">
-                      <div class="box-avatar-creator">
-                        <a href="/#" class=""
-                          ><img
-                            src="https://secure.gravatar.com/avatar/038fa12f0c96c112ad3cb3ff4d2c43ff?s=96&amp;d=mm&amp;r=g"
-                            alt="Avatar"
-                          /><span><p>
-                      {{data.semester}}
-                    </p> Antara Digital Media</span></a
-                        >
-                      </div>
-                      <div class="box-post-date">
-                        <span
-                          ><i class="fas fa-circle"></i> {{data.tahun_ajaran}}</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="img-thumb-cat">
-                    <a :href="data.url" target="_blank"><div class="box-label">
-                        <span class="label-categories"
-                          >{{data.tahun_ajaran}}</span
-                        >
-                      </div>
-                      <div class="box-image-post">
-                        </div
-                    ></a>
-                  </div>
-                </li>
-                
-                <!---->
-              </ul>
-            </div>
-          </div>
+    <div class="container-fluid">
+        
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+        <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
+            For more information about DataTables, please visit the <a target="_blank"
+                href="https://datatables.net">official DataTables documentation</a>.</p>
 
-
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+            </div>
+            <div class="card-header">
+                <h4 class="card-title">
+                  	<!-- TOMBOL YANG KETIKA DIKLIK AKAN DIARAHKAN KE HALAMAN ADD USER -->
+                    <nuxt-link class="btn btn-primary float-right btn-sm" :to="{name: 'users-add'}">Add New</nuxt-link>
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>semester</th>
+                                <th>tahun ajaran</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Id</th>
+                                <th>semester</th>
+                                <th>tahun ajaran</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr v-for="data in fetchedKanalCategoryImq.data" v-bind:key="data.id">
+                                <td>{{data.ID}}</td>
+                                <td>{{data.semester}}</td>
+                                <td>{{data.tahun_ajaran}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-      </div>
-      
     </div>
-  </section>
 </template>
-
 <script>
 import { mapGetters } from "vuex";
 import "@/assets/css/category.css";

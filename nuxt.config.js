@@ -52,12 +52,18 @@ export default {
       //{ src:'//unpkg.com/vue@latest/dist/vue.min.js', ssr: false, defer: true},
       { src:'https://code.jquery.com/jquery-3.2.1.slim.min.js', defer: true},
       { src:'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', ssr: false, defer: true},
+      { src: "/vendor/jquery/jquery.min.js" },
+      { src: "vendor/bootstrap/js/bootstrap.bundle.min.js" },
+      { src: "vendor/jquery-easing/jquery.easing.min.js" },
+      { src: "js/sb-admin-2.min.js" }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     '@/assets/css/style.css',
+    '@/assets/css/sb-admin-2.min.css',
+    '@/assets/vendor/fontawesome-free/css/all.min.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
