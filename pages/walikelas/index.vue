@@ -10,12 +10,12 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Wali Kelas</h6>
             </div>
             <div class="card-header">
                 <h4 class="card-title">
                   	<!-- TOMBOL YANG KETIKA DIKLIK AKAN DIARAHKAN KE HALAMAN ADD USER -->
-                    <nuxt-link class="btn btn-primary float-right btn-sm" :to="{name: 'users-add'}">Add New</nuxt-link>
+                    <a class="btn btn-primary float-right btn-sm" href="/walikelas/add">Add New</a>
                 </h4>
             </div>
             <div class="card-body">
