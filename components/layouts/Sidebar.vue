@@ -31,6 +31,14 @@
 
         <!-- Nav Item - Semester -->
         <li class="nav-item active">
+            <nuxt-link class="nav-link" :to="{name: 'category' } ">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Category</span>
+            </nuxt-link>
+        </li>
+
+        <!-- Nav Item - Semester -->
+        <li class="nav-item active">
             <nuxt-link class="nav-link" :to="{name: 'semester' } ">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Semester</span>
